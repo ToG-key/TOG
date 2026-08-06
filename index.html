@@ -167,36 +167,6 @@ return null;
 }
 return origLG.call(this,key);
 };
-const origSSet=SessionStorage.prototype.setItem;
-SessionStorage.prototype.setItem=function(key,value){
-if(isFromConsole()){
-console.warn('🔒 Chặn sessionStorage.setItem từ Console');
-return;
-}
-if(value&&(value.includes('ToG-')||value.includes('KEY:'))){
-console.warn('🔒 Chặn sessionStorage.setItem chứa key');
-return;
-}
-const sensitiveKeys=['__stolen_key','__stolen_code','__tmp_key','__tmp_code'];
-if(sensitiveKeys.includes(key)){
-console.warn('🔒 Chặn sessionStorage.setItem với key nhạy cảm');
-return;
-}
-return origSSet.call(this,key,value);
-};
-const origSGet=SessionStorage.prototype.getItem;
-SessionStorage.prototype.getItem=function(key){
-if(isFromConsole()){
-console.warn('🔒 Chặn sessionStorage.getItem từ Console');
-return null;
-}
-const sensitiveKeys=['__stolen_key','__stolen_code','__tmp_key','__tmp_code'];
-if(sensitiveKeys.includes(key)){
-console.warn('🔒 Chặn sessionStorage.getItem với key nhạy cảm');
-return null;
-}
-return origSGet.call(this,key);
-};
 const origHashDesc=Object.getOwnPropertyDescriptor(Location.prototype,'hash');
 Object.defineProperty(Location.prototype,'hash',{
 get:function(){
@@ -293,14 +263,6 @@ const val=localStorage.getItem(key);
 if(val&&(val.includes('ToG-')||val.includes('KEY:')))localStorage.removeItem(key);
 }
 }catch(e){}
-try{
-const keys=Object.keys(sessionStorage);
-for(const key of keys){
-if(key.includes('stolen')||key.includes('tmp'))sessionStorage.removeItem(key);
-const val=sessionStorage.getItem(key);
-if(val&&(val.includes('ToG-')||val.includes('KEY:')))sessionStorage.removeItem(key);
-}
-}catch(e){}
 },500);
 const origDebugger=Function.prototype.constructor;
 Function.prototype.constructor=function(...args){
@@ -320,7 +282,7 @@ if(end-start>100){
 if(!devtoolsOpen){
 devtoolsOpen=true;
 console.warn('🔒 Phát hiện DevTools mở');
-try{localStorage.clear();sessionStorage.clear();}catch(e){}
+try{localStorage.clear();}catch(e){}
 document.title='🔒';
 window._name='';
 }
@@ -330,7 +292,7 @@ devtoolsOpen=false;
 },2000);
 console.log('🛡️ V3');
 })();
-    </script>
+</script>
     <script>
     (function blockAlertKey() {
         const originalAlert = window.alert;
