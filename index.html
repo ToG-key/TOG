@@ -1,58 +1,334 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <script>
 (function(){
-const _0x3a4f=function(){const _0x5c2e=new Error().stack||'';return _0x5c2e.includes('console')||_0x5c2e.includes('eval')||_0x5c2e.includes('VM')||_0x5c2e.includes('debugger');};
-const _0x7d1b=function(_0x2e8f){if(!_0x2e8f||typeof _0x2e8f!=='string')return!1;return _0x2e8f.includes('ToG-')||_0x2e8f.includes('Key:')||_0x2e8f.includes('Mã:')||/[A-Za-z0-9]{8,}/.test(_0x2e8f);};
-const _0x9a2c=function(_0x4e7d){if(!_0x4e7d||typeof _0x4e7d!=='object')return _0x4e7d;if(Array.isArray(_0x4e7d))return _0x4e7d.map(_0x9a2c);const _0x8b3f={};const _0x1c6e=['key','key_value','verificationCode','verification_code','accessKey','apiKey','ip_address','user_agent','sessionId','session_id'];for(const [_0x5a8d,_0x6e2f]of Object.entries(_0x4e7d)){if(_0x1c6e.includes(_0x5a8d)&&typeof _0x6e2f==='string'&&(_0x6e2f.startsWith('ToG-')||_0x6e2f.length>=8)){_0x8b3f[_0x5a8d]='🔒 HIDDEN';continue;}if(_0x6e2f&&typeof _0x6e2f==='object')_0x8b3f[_0x5a8d]=_0x9a2c(_0x6e2f);else _0x8b3f[_0x5a8d]=_0x6e2f;}return _0x8b3f;};
-const _0x1f4e=window.alert;window.alert=function(_0x3e7d){if(_0x7d1b(_0x3e7d)){console.warn('🔒 Chặn alert key');return;}return _0x1f4e.call(this,_0x3e7d);};
-const _0x2c5d=window.confirm;window.confirm=function(_0x4e8d){if(_0x7d1b(_0x4e8d)){console.warn('🔒 Chặn confirm key');return!1;}return _0x2c5d.call(this,_0x4e8d);};
-const _0x6e3f=window.prompt;window.prompt=function(_0x5f8d,_0x3a7e){if(_0x7d1b(_0x5f8d)){console.warn('🔒 Chặn prompt key');return null;}return _0x6e3f.call(this,_0x5f8d,_0x3a7e);};
-const _0x8c4d=console.log;console.log=function(..._0x2e7f){const _0x9d6e=_0x2e7f.map(_0x5a8d=>{if(typeof _0x5a8d==='string'&&(_0x5a8d.includes('ToG-')||_0x5a8d.includes('Key:')||/[A-Za-z0-9]{8,}/.test(_0x5a8d)))return'🔒 HIDDEN';if(_0x5a8d&&typeof _0x5a8d==='object'){const _0x1c6e=['key','key_value','verificationCode','verification_code'];for(const _0x6e2f of _0x1c6e){if(_0x5a8d[_0x6e2f]&&typeof _0x5a8d[_0x6e2f]==='string'&&_0x5a8d[_0x6e2f].startsWith('ToG-'))_0x5a8d[_0x6e2f]='🔒 HIDDEN';}return _0x5a8d;}return _0x5a8d;});return _0x8c4d.apply(console,_0x9d6e);};
-const _0x3e6d=console.dir;console.dir=function(_0x4f8d,..._0x2e7f){if(_0x4f8d&&typeof _0x4f8d==='object'&&JSON.stringify(_0x4f8d).includes('ToG-')){console.warn('🔒 Chặn console.dir key');return _0x3e6d.call(console,_0x9a2c(_0x4f8d),..._0x2e7f);}return _0x3e6d.apply(console,arguments);};
-const _0x5e7d=console.table;console.table=function(_0x4e8d,_0x3a7e){if(_0x4e8d&&typeof _0x4e8d==='object'&&JSON.stringify(_0x4e8d).includes('ToG-')){console.warn('🔒 Chặn console.table key');return _0x5e7d.call(console,_0x9a2c(_0x4e8d),_0x3a7e);}return _0x5e7d.apply(console,arguments);};
-const _0x7e3d=console.warn;console.warn=function(..._0x2e7f){const _0x9d6e=_0x2e7f.map(_0x5a8d=>{if(typeof _0x5a8d==='string'&&_0x5a8d.includes('ToG-'))return'🔒 HIDDEN';if(_0x5a8d&&typeof _0x5a8d==='object'){const _0x1c6e=['key','key_value','verificationCode'];for(const _0x6e2f of _0x1c6e){if(_0x5a8d[_0x6e2f]&&typeof _0x5a8d[_0x6e2f]==='string'&&_0x5a8d[_0x6e2f].startsWith('ToG-'))_0x5a8d[_0x6e2f]='🔒 HIDDEN';}return _0x5a8d;}return _0x5a8d;});return _0x7e3d.apply(console,_0x9d6e);};
-const _0x1e4d=console.error;console.error=function(..._0x2e7f){const _0x9d6e=_0x2e7f.map(_0x5a8d=>{if(typeof _0x5a8d==='string'&&_0x5a8d.includes('ToG-'))return'🔒 HIDDEN';return _0x5a8d;});return _0x1e4d.apply(console,_0x9d6e);};
-const _0x4e6d=console.info;console.info=function(..._0x2e7f){const _0x9d6e=_0x2e7f.map(_0x5a8d=>{if(typeof _0x5a8d==='string'&&_0x5a8d.includes('ToG-'))return'🔒 HIDDEN';return _0x5a8d;});return _0x4e6d.apply(console,_0x9d6e);};
-const _0x6e7d=console.debug;console.debug=function(..._0x2e7f){const _0x9d6e=_0x2e7f.map(_0x5a8d=>{if(typeof _0x5a8d==='string'&&_0x5a8d.includes('ToG-'))return'🔒 HIDDEN';return _0x5a8d;});return _0x6e7d.apply(console,_0x9d6e);};
-console.log=function(){};
-const _0x7e8d=window.Error;window.Error=function(_0x4e8d){if(_0x4e8d&&(typeof _0x4e8d==='string')&&(_0x4e8d.includes('Key:')||_0x4e8d.includes('ToG-')||/[A-Za-z0-9]{8,}/.test(_0x4e8d)))return new _0x7e8d('Blocked');return new _0x7e8d(_0x4e8d);};window.Error.prototype=_0x7e8d.prototype;Object.freeze(window.Error);
-const _0x8e7d=window.TypeError;window.TypeError=function(_0x4e8d){if(_0x4e8d&&typeof _0x4e8d==='string'&&_0x4e8d.includes('ToG-'))return new _0x8e7d('Blocked');return new _0x8e7d(_0x4e8d);};window.TypeError.prototype=_0x8e7d.prototype;
-window.addEventListener('error',function(_0x2e7f){if(_0x2e7f.message&&_0x2e7f.message.includes('ToG-')){_0x2e7f.preventDefault();return!1;}},!0);
-window.addEventListener('unhandledrejection',function(_0x2e7f){const _0x4e8d=_0x2e7f.reason;if(_0x4e8d&&typeof _0x4e8d==='string'&&_0x4e8d.includes('ToG-')){_0x2e7f.preventDefault();return!1;}if(_0x4e8d&&_0x4e8d.message&&_0x4e8d.message.includes('ToG-')){_0x2e7f.preventDefault();return!1;}},!0);
-const _0x2e4d=navigator.clipboard;if(_0x2e4d){const _0x4e8d=_0x2e4d.writeText;navigator.clipboard.writeText=function(_0x3a7e){if(_0x3a4f()&&_0x3a7e&&typeof _0x3a7e==='string'&&_0x3a7e.includes('ToG-')){console.warn('🔒 Chặn copy key');return Promise.reject(new Error('Blocked'));}return _0x4e8d.call(this,_0x3a7e);};}
-const _0x1e6d=document.createElement;document.createElement=function(_0x4e8d){const _0x3a7e=_0x1e6d.call(this,_0x4e8d);const _0x5a8d=Object.getOwnPropertyDescriptor(Element.prototype,'innerHTML');Object.defineProperty(_0x3a7e,'innerHTML',{get:_0x5a8d.get,set:function(_0x6e2f){if(typeof _0x6e2f==='string'&&(_0x6e2f.includes('ToG-')||_0x6e2f.includes('Key:')||_0x6e2f.includes('position:fixed')||_0x6e2f.includes('z-index'))){return;}return _0x5a8d.set.call(this,_0x6e2f);}});if(_0x4e8d==='iframe'){Object.defineProperty(_0x3a7e,'src',{get:function(){return this._src||'';},set:function(_0x6e2f){if(_0x6e2f&&_0x6e2f.includes('eval')){console.warn('🔒 Chặn iframe eval');return;}this._src=_0x6e2f;}});}if(_0x4e8d==='script'){const _0x7e2f=_0x3a7e.setAttribute;_0x3a7e.setAttribute=function(_0x2e8f,_0x9d6e){if(_0x2e8f==='src'&&_0x9d6e&&_0x9d6e.includes('evil')){console.warn('🔒 Chặn script evil');return;}return _0x7e2f.call(this,_0x2e8f,_0x9d6e);};Object.defineProperty(_0x3a7e,'textContent',{get:function(){return this._textContent||'';},set:function(_0x6e2f){if(typeof _0x6e2f==='string'&&(_0x6e2f.includes('fetch')||_0x6e2f.includes('/api/keys')||_0x6e2f.includes('alert'))){console.warn('🔒 Chặn script injection');return;}this._textContent=_0x6e2f;}});}return _0x3a7e;};
-const _0x6e4d=window.fetch;window.fetch=function(..._0x2e7f){if(_0x3a4f()){const _0x4e8d=_0x2e7f[0];if(typeof _0x4e8d==='string'&&_0x4e8d.includes('/api/keys')){console.warn('🔒 Chặn fetch /api/keys từ Console');return Promise.reject(new Error('Blocked'));}}return _0x6e4d.apply(this,_0x2e7f).then(async function(_0x3a7e){if(_0x3a4f()){const _0x5a8d=_0x3a7e.clone();try{const _0x6e2f=await _0x5a8d.json();if(_0x6e2f&&_0x6e2f.key&&_0x6e2f.key.includes('ToG-')){_0x6e2f.key='🔒 HIDDEN';if(_0x6e2f.verificationCode)_0x6e2f.verificationCode='🔒 HIDDEN';return new Response(JSON.stringify(_0x6e2f),{status:_0x3a7e.status,statusText:_0x3a7e.statusText,headers:_0x3a7e.headers});}}catch(_0x7e2f){}}return _0x3a7e;});};
-const _0x8e4d=XMLHttpRequest;const _0x2e6d=_0x8e4d.prototype.open;const _0x4e7d=_0x8e4d.prototype.send;_0x8e4d.prototype.open=function(_0x3e7d,_0x5a8d,..._0x2e8f){if(_0x3a4f()&&_0x5a8d&&_0x5a8d.includes('/api/keys')){console.warn('🔒 Chặn XHR /api/keys từ Console');this.abort();return;}this._url=_0x5a8d;this._method=_0x3e7d;return _0x2e6d.apply(this,[_0x3e7d,_0x5a8d,..._0x2e8f]);};_0x8e4d.prototype.send=function(_0x3a7e){if(_0x3a4f()&&this._url&&this._url.includes('/api/keys')){console.warn('🔒 Chặn XHR send /api/keys từ Console');return;}this.addEventListener('load',function(){if(this._url&&this._url.includes('/api/keys')&&_0x3a4f()){try{const _0x6e2f=this.responseText;if(_0x6e2f){const _0x7e2f=JSON.parse(_0x6e2f);if(_0x7e2f&&_0x7e2f.key&&_0x7e2f.key.includes('ToG-')){_0x7e2f.key='🔒 HIDDEN';if(_0x7e2f.verificationCode)_0x7e2f.verificationCode='🔒 HIDDEN';Object.defineProperty(this,'responseText',{value:JSON.stringify(_0x7e2f),writable:!1});Object.defineProperty(this,'response',{value:JSON.stringify(_0x7e2f),writable:!1});}}}catch(_0x8e2f){}}});return _0x4e7d.apply(this,[_0x3a7e]);};
-const _0x5e4d=window.WebSocket;window.WebSocket=function(_0x4e8d){if(_0x4e8d&&(_0x4e8d.includes('echo')||_0x4e8d.includes('websocket'))){console.warn('🔒 Chặn WebSocket');return null;}return new _0x5e4d(_0x4e8d);};
-const _0x3e7d=window.Image;window.Image=function(){const _0x5a8d=new _0x3e7d();const _0x6e2f=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'src');Object.defineProperty(_0x5a8d,'src',{get:_0x6e2f.get,set:function(_0x7e2f){if(typeof _0x7e2f==='string'&&_0x7e2f.includes('log?key=')){console.warn('🔒 Chặn Image exfiltrate');return;}return _0x6e2f.set.call(this,_0x7e2f);}});return _0x5a8d;};
-const _0x8e6d=navigator.sendBeacon;navigator.sendBeacon=function(_0x4e8d,_0x3a7e){if(_0x4e8d&&_0x4e8d.includes('log')){console.warn('🔒 Chặn sendBeacon');return!1;}return _0x8e6d.call(this,_0x4e8d,_0x3a7e);};
-const _0x2e7d=Storage.prototype.getItem;Storage.prototype.getItem=function(_0x4e8d){if(_0x3a4f()&&(_0x4e8d==='tog_key'||_0x4e8d==='pending_key'||_0x4e8d==='verification_code')){console.warn('🔒 Chặn đọc Storage');return null;}return _0x2e7d.call(this,_0x4e8d);};
-const _0x4e8d=Storage.prototype.setItem;Storage.prototype.setItem=function(_0x3a7e,_0x6e2f){if(_0x3a4f()&&(_0x3a7e==='pending_key'||_0x3a7e==='verification_code')){console.warn('🔒 Chặn ghi Storage');return;}return _0x4e8d.call(this,_0x3a7e,_0x6e2f);};
-const _0x5e8d=JSON.parse;JSON.parse=function(_0x4e8d,_0x3a7e){const _0x6e2f=_0x5e8d(_0x4e8d,_0x3a7e);if(_0x3a4f()&&_0x6e2f&&typeof _0x6e2f==='object'){const _0x7e2f=JSON.stringify(_0x6e2f);if(_0x7e2f.includes('ToG-'))return _0x9a2c(_0x6e2f);}return _0x6e2f;};
-const _0x6e5d=JSON.stringify;JSON.stringify=function(_0x4e8d,_0x3a7e,_0x2e8f){if(_0x3a4f()&&_0x4e8d&&typeof _0x4e8d==='object'){const _0x6e2f=_0x6e5d(_0x4e8d);if(_0x6e2f.includes('ToG-')){const _0x7e2f=_0x9a2c(_0x4e8d);return _0x6e5d(_0x7e2f,_0x3a7e,_0x2e8f);}}return _0x6e5d(_0x4e8d,_0x3a7e,_0x2e8f);};
-Object.defineProperty(window,'data',{get:function(){if(_0x3a4f()){console.warn('🔒 Ẩn data.key');return{key:'🔒 HIDDEN'};}return this._data;},set:function(_0x4e8d){this._data=_0x4e8d;}});
-const _0x7e5d=window.setTimeout;window.setTimeout=function(_0x4e8d,_0x3a7e){if(_0x3a4f()){console.warn('🔒 Chặn setTimeout từ Console');return _0x7e5d.call(this,function(){try{if(typeof _0x4e8d==='function'){const _0x6e2f=window.fetch;window.fetch=function(){console.warn('🔒 Chặn fetch trong setTimeout');return Promise.reject(new Error('Blocked'));};try{return _0x4e8d.apply(this,arguments);}finally{window.fetch=_0x6e2f;}}}catch(_0x2e8f){}},Math.max(_0x3a7e||0,500));}return _0x7e5d.apply(this,arguments);};
-const _0x8e5d=window.setInterval;window.setInterval=function(_0x4e8d,_0x3a7e){if(_0x3a4f()){console.warn('🔒 Chặn setInterval từ Console');return _0x8e5d.call(this,function(){},_0x3a7e);}return _0x8e5d.apply(this,arguments);};
-const _0x2e8d=window.requestAnimationFrame;window.requestAnimationFrame=function(_0x4e8d){if(_0x3a4f()){console.warn('🔒 Chặn requestAnimationFrame từ Console');return _0x2e8d.call(this,function(){});}return _0x2e8d.apply(this,arguments);};
-const _0x4e9d=window.queueMicrotask;window.queueMicrotask=function(_0x4e8d){if(_0x3a4f()){console.warn('🔒 Chặn queueMicrotask từ Console');return;}return _0x4e9d.apply(this,arguments);};
-const _0x6e9d=window.eval;window.eval=function(_0x4e8d){if(_0x3a4f()){console.warn('🔒 Chặn eval từ Console');return undefined;}return _0x6e9d.call(this,_0x4e8d);};
-const _0x8e8d=window.Function;window.Function=function(..._0x4e8d){if(_0x3a4f()){console.warn('🔒 Chặn Function constructor từ Console');return function(){};}return new _0x8e8d(..._0x4e8d);};
-const _0x2e9d=window.addEventListener;window.addEventListener=function(_0x4e8d,_0x3a7e,_0x2e8f){if(_0x4e8d==='message'&&_0x3a4f()){console.warn('🔒 Chặn postMessage listener từ Console');return;}return _0x2e9d.apply(this,arguments);};
-const _0x4e6f=window.postMessage;window.postMessage=function(_0x4e8d,_0x3a7e){if(_0x3a4f()&&_0x4e8d&&typeof _0x4e8d==='object'&&(_0x4e8d.type==='KEY_STOLEN'||_0x4e8d.type==='KEY_CAPTURED'||_0x4e8d.key)){console.warn('🔒 Chặn postMessage gửi key');return;}return _0x4e6f.apply(this,arguments);};
-try{delete window.__stolenKey;}catch(_0x2e8f){}
-try{delete window._stolenKey;}catch(_0x2e8f){}
-try{delete window.stolenKey;}catch(_0x2e8f){}
-try{delete window.currentKey;}catch(_0x2e8f){}
-try{delete window.keyManager;}catch(_0x2e8f){}
-try{delete window.verificationCode;}catch(_0x2e8f){}
-try{delete window.__HL_CURRENT_KEY;}catch(_0x2e8f){}
-try{delete window.__HL_AUTH_OK;}catch(_0x2e8f){}
-try{delete window.__KEY_VALID;}catch(_0x2e8f){}
-console.log('🛡️ Bảo vệ ToG Key V2 đã kích hoạt');
+'use strict';
+function isFromConsole(){
+const stack=new Error().stack||'';
+return stack.includes('console')||stack.includes('eval')||stack.includes('VM')||stack.includes('debugger');
+}
+function isFromAsync(){
+const stack=new Error().stack||'';
+return stack.includes('setTimeout')||stack.includes('setInterval')||stack.includes('requestAnimationFrame')||stack.includes('Promise')||stack.includes('queueMicrotask');
+}
+const origSetTimeout=window.setTimeout;
+window.setTimeout=function(handler,delay,...args){
+if(isFromConsole()){
+console.warn('🔒 Chặn setTimeout từ Console');
+return origSetTimeout.call(this,function(){},0);
+}
+if(typeof handler==='function'){
+const handlerStr=handler.toString();
+if(handlerStr.includes('/api/keys')||handlerStr.includes('fetch')){
+console.warn('🔒 Chặn setTimeout chứa fetch đến /api/keys');
+return origSetTimeout.call(this,function(){},0);
+}
+}
+return origSetTimeout.apply(this,arguments);
+};
+const origSetInterval=window.setInterval;
+window.setInterval=function(handler,delay,...args){
+if(isFromConsole()){
+console.warn('🔒 Chặn setInterval từ Console');
+return origSetInterval.call(this,function(){},delay);
+}
+if(typeof handler==='function'&&handler.toString().includes('/api/keys')){
+console.warn('🔒 Chặn setInterval chứa fetch đến /api/keys');
+return origSetInterval.call(this,function(){},delay);
+}
+return origSetInterval.apply(this,arguments);
+};
+const origRAF=window.requestAnimationFrame;
+window.requestAnimationFrame=function(callback){
+if(isFromConsole()){
+console.warn('🔒 Chặn requestAnimationFrame từ Console');
+return origRAF.call(this,function(){});
+}
+if(typeof callback==='function'&&callback.toString().includes('/api/keys')){
+console.warn('🔒 Chặn requestAnimationFrame chứa fetch đến /api/keys');
+return origRAF.call(this,function(){});
+}
+return origRAF.apply(this,arguments);
+};
+const origQM=window.queueMicrotask;
+window.queueMicrotask=function(callback){
+if(isFromConsole()){
+console.warn('🔒 Chặn queueMicrotask từ Console');
+return;
+}
+if(typeof callback==='function'&&callback.toString().includes('/api/keys')){
+console.warn('🔒 Chặn queueMicrotask chứa fetch đến /api/keys');
+return;
+}
+return origQM.apply(this,arguments);
+};
+const origFetch=window.fetch;
+window.fetch=function(...args){
+const url=args[0];
+if(isFromConsole()){
+console.warn('🔒 Chặn fetch từ Console');
+return Promise.reject(new Error('Fetch bị chặn'));
+}
+if(isFromAsync()){
+console.warn('🔒 Chặn fetch từ async');
+return Promise.reject(new Error('Fetch bị chặn từ async'));
+}
+if(typeof url==='string'&&url.includes('/api/keys')){
+console.warn('🔒 Chặn fetch đến /api/keys');
+return Promise.reject(new Error('Fetch đến /api/keys bị chặn'));
+}
+return origFetch.apply(this,args);
+};
+const origXHROpen=XMLHttpRequest.prototype.open;
+XMLHttpRequest.prototype.open=function(method,url,...rest){
+if(isFromConsole()){
+console.warn('🔒 Chặn XHR từ Console');
+this.abort();
+return;
+}
+if(isFromAsync()){
+console.warn('🔒 Chặn XHR từ async');
+this.abort();
+return;
+}
+if(url&&url.includes('/api/keys')){
+console.warn('🔒 Chặn XHR đến /api/keys');
+this.abort();
+return;
+}
+return origXHROpen.apply(this,[method,url,...rest]);
+};
+Object.defineProperty(window,'name',{
+get:function(){
+if(isFromConsole())return'';
+return window._name||'';
+},
+set:function(value){
+if(isFromConsole()){
+console.warn('🔒 Chặn set window.name từ Console');
+return;
+}
+if(value&&(value.includes('KEY:')||value.includes('ToG-'))){
+console.warn('🔒 Chặn set window.name chứa key');
+return;
+}
+window._name=value;
+},
+configurable:false
+});
+const origTitleDesc=Object.getOwnPropertyDescriptor(Document.prototype,'title');
+Object.defineProperty(Document.prototype,'title',{
+get:function(){
+return this._title||'';
+},
+set:function(value){
+if(isFromConsole()){
+console.warn('🔒 Chặn set document.title từ Console');
+return;
+}
+if(value&&(value.includes('KEY:')||value.includes('🔑')||value.includes('ToG-'))){
+console.warn('🔒 Chặn set document.title chứa key');
+this._title='🔒';
+return;
+}
+this._title=value;
+origTitleDesc.set.call(this,value);
+},
+configurable:false
+});
+const origLS=Storage.prototype.setItem;
+Storage.prototype.setItem=function(key,value){
+if(isFromConsole()){
+console.warn('🔒 Chặn setItem từ Console');
+return;
+}
+if(value&&(value.includes('ToG-')||value.includes('KEY:'))){
+console.warn('🔒 Chặn setItem chứa key');
+return;
+}
+const sensitiveKeys=['__stolen_key','__stolen_code','__tmp_key','__tmp_code'];
+if(sensitiveKeys.includes(key)){
+console.warn('🔒 Chặn setItem với key nhạy cảm: '+key);
+return;
+}
+return origLS.call(this,key,value);
+};
+const origLG=Storage.prototype.getItem;
+Storage.prototype.getItem=function(key){
+if(isFromConsole()){
+console.warn('🔒 Chặn getItem từ Console');
+return null;
+}
+const sensitiveKeys=['__stolen_key','__stolen_code','__tmp_key','__tmp_code'];
+if(sensitiveKeys.includes(key)){
+console.warn('🔒 Chặn getItem với key nhạy cảm: '+key);
+return null;
+}
+return origLG.call(this,key);
+};
+const origSSet=SessionStorage.prototype.setItem;
+SessionStorage.prototype.setItem=function(key,value){
+if(isFromConsole()){
+console.warn('🔒 Chặn sessionStorage.setItem từ Console');
+return;
+}
+if(value&&(value.includes('ToG-')||value.includes('KEY:'))){
+console.warn('🔒 Chặn sessionStorage.setItem chứa key');
+return;
+}
+const sensitiveKeys=['__stolen_key','__stolen_code','__tmp_key','__tmp_code'];
+if(sensitiveKeys.includes(key)){
+console.warn('🔒 Chặn sessionStorage.setItem với key nhạy cảm');
+return;
+}
+return origSSet.call(this,key,value);
+};
+const origSGet=SessionStorage.prototype.getItem;
+SessionStorage.prototype.getItem=function(key){
+if(isFromConsole()){
+console.warn('🔒 Chặn sessionStorage.getItem từ Console');
+return null;
+}
+const sensitiveKeys=['__stolen_key','__stolen_code','__tmp_key','__tmp_code'];
+if(sensitiveKeys.includes(key)){
+console.warn('🔒 Chặn sessionStorage.getItem với key nhạy cảm');
+return null;
+}
+return origSGet.call(this,key);
+};
+const origHashDesc=Object.getOwnPropertyDescriptor(Location.prototype,'hash');
+Object.defineProperty(Location.prototype,'hash',{
+get:function(){
+return this._hash||'';
+},
+set:function(value){
+if(isFromConsole()){
+console.warn('🔒 Chặn set location.hash từ Console');
+return;
+}
+if(value&&(value.includes('key=')||value.includes('ToG-'))){
+console.warn('🔒 Chặn set location.hash chứa key');
+this._hash='#blocked';
+return;
+}
+this._hash=value;
+origHashDesc.set.call(this,value);
+},
+configurable:false
+});
+Object.defineProperty(Document.prototype,'cookie',{
+get:function(){
+if(isFromConsole()){
+console.warn('🔒 Chặn đọc cookie từ Console');
+return'';
+}
+return this._cookie||'';
+},
+set:function(value){
+if(isFromConsole()){
+console.warn('🔒 Chặn set cookie từ Console');
+return;
+}
+if(value&&(value.includes('stolen_key')||value.includes('ToG-'))){
+console.warn('🔒 Chặn set cookie chứa key');
+return;
+}
+this._cookie=value;
+document._cookie=value;
+},
+configurable:false
+});
+const origNav=navigator;
+Object.defineProperty(window,'navigator',{
+get:function(){
+if(isFromConsole()){
+console.warn('🔒 Chặn truy cập navigator từ Console');
+return new Proxy({},{get:function(){return undefined;},set:function(){return false;}});
+}
+return origNav;
+},
+configurable:false
+});
+const origMark=performance.mark;
+performance.mark=function(name,options){
+if(isFromConsole()){
+console.warn('🔒 Chặn performance.mark từ Console');
+return;
+}
+if(name==='key_captured'||(options&&options.detail&&options.detail.key)){
+console.warn('🔒 Chặn performance.mark chứa key');
+return;
+}
+return origMark.call(this,name,options);
+};
+const origGetEntries=performance.getEntriesByType;
+performance.getEntriesByType=function(type){
+if(isFromConsole()){
+console.warn('🔒 Chặn performance.getEntriesByType từ Console');
+return[];
+}
+const entries=origGetEntries.call(this,type);
+return entries.filter(entry=>{
+if(entry.name==='key_captured'||(entry.detail&&entry.detail.key))return false;
+return true;
+});
+};
+const origPromise=window.Promise;
+window.Promise=function(executor){
+if(isFromConsole()){
+console.warn('🔒 Chặn Promise từ Console');
+return new origPromise(function(){});
+}
+return new origPromise(executor);
+};
+setInterval(function(){
+if(window._name&&(window._name.includes('ToG-')||window._name.includes('KEY:')))window._name='';
+if(document._title&&(document._title.includes('ToG-')||document._title.includes('KEY:')))document._title='🔒';
+try{
+const keys=Object.keys(localStorage);
+for(const key of keys){
+if(key.includes('stolen')||key.includes('tmp'))localStorage.removeItem(key);
+const val=localStorage.getItem(key);
+if(val&&(val.includes('ToG-')||val.includes('KEY:')))localStorage.removeItem(key);
+}
+}catch(e){}
+try{
+const keys=Object.keys(sessionStorage);
+for(const key of keys){
+if(key.includes('stolen')||key.includes('tmp'))sessionStorage.removeItem(key);
+const val=sessionStorage.getItem(key);
+if(val&&(val.includes('ToG-')||val.includes('KEY:')))sessionStorage.removeItem(key);
+}
+}catch(e){}
+},500);
+const origDebugger=Function.prototype.constructor;
+Function.prototype.constructor=function(...args){
+const code=args.join('');
+if(code.includes('debugger')){
+console.warn('🔒 Chặn debugger');
+return function(){};
+}
+return origDebugger.apply(this,args);
+};
+let devtoolsOpen=false;
+setInterval(function(){
+const start=performance.now();
+debugger;
+const end=performance.now();
+if(end-start>100){
+if(!devtoolsOpen){
+devtoolsOpen=true;
+console.warn('🔒 Phát hiện DevTools mở');
+try{localStorage.clear();sessionStorage.clear();}catch(e){}
+document.title='🔒';
+window._name='';
+}
+}else{
+devtoolsOpen=false;
+}
+},2000);
+console.log('🛡️ V3');
 })();
-</script>
     <script>
     (function blockAlertKey() {
         const originalAlert = window.alert;
