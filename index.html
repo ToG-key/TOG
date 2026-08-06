@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <script>
+<script>
 (function(){
 'use strict';
 function isFromConsole(){
@@ -74,10 +74,6 @@ if(isFromAsync()){
 console.warn('🔒 Chặn fetch từ async');
 return Promise.reject(new Error('Fetch bị chặn từ async'));
 }
-if(typeof url==='string'&&url.includes('/api/keys')){
-console.warn('🔒 Chặn fetch đến /api/keys');
-return Promise.reject(new Error('Fetch đến /api/keys bị chặn'));
-}
 return origFetch.apply(this,args);
 };
 const origXHROpen=XMLHttpRequest.prototype.open;
@@ -89,11 +85,6 @@ return;
 }
 if(isFromAsync()){
 console.warn('🔒 Chặn XHR từ async');
-this.abort();
-return;
-}
-if(url&&url.includes('/api/keys')){
-console.warn('🔒 Chặn XHR đến /api/keys');
 this.abort();
 return;
 }
@@ -252,7 +243,10 @@ return new origPromise(function(){});
 }
 return new origPromise(executor);
 };
-setInterval(function(){
+const cleanupInterval = setInterval(function(){
+if(!isFromConsole()){
+return;
+}
 if(window._name&&(window._name.includes('ToG-')||window._name.includes('KEY:')))window._name='';
 if(document._title&&(document._title.includes('ToG-')||document._title.includes('KEY:')))document._title='🔒';
 try{
